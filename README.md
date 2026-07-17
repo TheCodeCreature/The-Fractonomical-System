@@ -2,9 +2,17 @@
 
 This folder is a file-system-native product initiative tracker organized by the **hub-and-spoke** documentation pattern with **topic-based authoring**. Each governance concern lives in its own focused file under `_rules/`. This file is the hub; the spokes are linked below.
 
+This repository is intended to be the **Fractonomical framework root** (governance + templates). For future projects, keep this folder read-only and author delivery tickets in a separate writable backlog folder.
+
 Start at [Index.md](./Index.md) to navigate active initiatives.
 
 All starter templates live under [./_knowledge/_templates](./_knowledge/_templates/).
+
+Recommended split for future projects:
+
+1. `FRAMEWORK_ROOT` = this repository.
+2. `BACKLOG_ROOT` = sibling folder such as `../Project-Backlog`.
+3. Copy templates from `_knowledge/_templates/` into `BACKLOG_ROOT` and perform all ticket edits there.
 
 Reference knowledge is managed under [./_knowledge](./_knowledge/README.md), using a graph-first structure for books, papers, wiki packs, and study sessions. Instantiated backlog tickets remain outside `_knowledge/` as execution artifacts.
 

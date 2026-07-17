@@ -6,7 +6,7 @@ type: explanation
 # Principles and Canonical Hierarchy
 
 ## Purpose
-Defines the philosophical intent of this system and the canonical folder structure every initiative must follow.
+Defines the philosophical intent of this system and the canonical split between the read-only Fractonomical framework and a writable project backlog.
 
 ## Design Principles
 
@@ -20,13 +20,15 @@ Defines the philosophical intent of this system and the canonical folder structu
 ## Canonical Hierarchy
 
 ```text
-backlog/
+Fractonomical-System/             ← framework (read-only in normal project work)
+  _rules/
+  _knowledge/
+    _templates/                   ← source templates only
+
+<Project-Backlog>/                ← writable execution tree (external to framework)
   Index.md
   README.md
   Tracking.md                     ← compatibility shim only
-  _rules/                         ← governance topic files (this folder)
-  _knowledge/                     ← reference knowledge graph (books, papers, wiki packs)
-    _templates/                   ← starter files for both backlog and knowledge systems
   <epic-hex-id>_<epic-slug>/
     Overview.md
     Directive.md                  ← optional: strategic intent and constraints
@@ -37,6 +39,15 @@ backlog/
         <task-hex-id>_<task-slug>.md      ← leaf node, no children
 ```
 
+Default recommendation:
+1. Keep this repository untouched except framework updates.
+2. Create project tickets in a sibling folder (for example, `../Project-Backlog`).
+3. Copy starter structure from `_knowledge/_templates/` into the external backlog folder.
+
 ## Containment Rule
 
 Each level only links its direct children. Traversal to deeper descendants is inferred through parent containers. Never flatten the hierarchy into a single file or index.
+
+## Boundary Rule
+
+Framework files (`_rules/`, `_knowledge/`, and root docs in this repository) are governance assets, not delivery artifacts. Project execution tickets must be authored in the external backlog root.

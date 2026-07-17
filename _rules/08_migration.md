@@ -8,15 +8,24 @@ type: how-to
 ## Purpose
 Step-by-step instructions for aligning an existing backlog that predates this governance system with the current standard, without breaking existing links or losing content.
 
+This includes migrating execution artifacts out of the framework repository into an external backlog root.
+
 ---
 
 ## Migration Checklist
 
+### Phase 0 — Root Separation
+
+- [ ] Define `FRAMEWORK_ROOT` (this repository) and `BACKLOG_ROOT` (external writable folder).
+- [ ] Create `BACKLOG_ROOT` (recommended: `../Project-Backlog`).
+- [ ] Copy the required baseline files and folders into `BACKLOG_ROOT`: `Index.md`, `README.md`, and ticket containers.
+- [ ] Keep `_rules/` and `_knowledge/` in `FRAMEWORK_ROOT` as governance/template source.
+
 ### Phase 1 — Index and Root
 
-- [ ] Create `Index.md` at the backlog root using the canonical `Index.md` structure defined by this governance system.
+- [ ] Create `Index.md` in `BACKLOG_ROOT` using the canonical `Index.md` structure defined by this governance system.
 - [ ] Convert `Tracking.md` into a compatibility shim that redirects to `Index.md`.
-- [ ] Ensure `README.md` is the hub pointing to `_rules/`.
+- [ ] Ensure `README.md` in `BACKLOG_ROOT` points to framework governance docs in `FRAMEWORK_ROOT/_rules/`.
 
 ### Phase 2 — Container Files
 

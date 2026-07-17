@@ -21,6 +21,27 @@ Defines the behavioral contract for AI agents, prompts, skills, and hooks operat
 | Bidirectional links | When adding a child ticket, add its link in the parent's `## Child Tickets` table |
 | Valid YAML | All frontmatter must parse as valid YAML after every edit |
 | Minimal blast radius | Only edit files directly related to the current task; do not touch unrelated tickets |
+| Framework is read-only by default | Do not create delivery tickets inside this framework repository unless explicitly requested |
+| External backlog root | Create and update project tickets only under the configured backlog root (`BACKLOG_ROOT`) |
+| Template provenance | New tickets must be instantiated from `_knowledge/_templates/` and then written into `BACKLOG_ROOT` |
+
+---
+
+## Backlog Root Contract
+
+Agents must resolve two roots before ticket creation:
+
+1. `FRAMEWORK_ROOT` = this Fractonomical repository.
+2. `BACKLOG_ROOT` = writable external project backlog folder.
+
+Default if user does not specify: `../Project-Backlog` (sibling of `FRAMEWORK_ROOT`).
+
+Agent behavior:
+
+- Read templates from `FRAMEWORK_ROOT/_knowledge/_templates/`.
+- Create all execution artifacts in `BACKLOG_ROOT`.
+- Keep framework files unchanged during normal project planning.
+- Ask for explicit confirmation before editing framework docs.
 
 ---
 
@@ -50,7 +71,7 @@ When creating a new ticket container:
 
 1. Generate the ID using the hierarchical hex format `EEFFSSTT` (for example, `01010000`).
 2. Create the folder with the correct `<HierarchicalHexId>_<Slug>` name.
-3. Create `Overview.md` using the appropriate template from `_knowledge/_templates/`.
+3. Create `Overview.md` by copying the appropriate template from `FRAMEWORK_ROOT/_knowledge/_templates/` into `BACKLOG_ROOT`.
 4. Add the child link row in the parent `Overview.md`'s `## Child Tickets` table.
 5. Do not create `Directive.md` unless explicitly requested.
 
@@ -68,6 +89,8 @@ Required behavior:
 4. Keep frontmatter and body status/progress synchronized on each meaningful update.
 5. Check for duplicate intent and ID collisions before creating new nodes.
 6. Delegate implementation, testing, review, and cleanup to specialist agents; Project Manager owns backlog structure and orchestration.
+7. Resolve and state `BACKLOG_ROOT` before creating any ticket files.
+8. Use framework templates as source only; write ticket instances to `BACKLOG_ROOT`.
 
 Prompt-level guardrails:
 
