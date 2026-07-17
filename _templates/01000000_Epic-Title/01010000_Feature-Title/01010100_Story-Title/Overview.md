@@ -1,4 +1,4 @@
-﻿---
+---
 id: "01010100"
 type: story
 title: "Story Title"
@@ -12,7 +12,7 @@ owners:
 tags:
   - domain:replace-me
   - layer:replace-me
-  - type:feature
+  - type:replace-me
 depends_on: []
 blocked_by: []
 progress: 0
@@ -23,7 +23,7 @@ progress: 0
 Status: backlog | Progress: [..........] 0%
 
 ## Navigation
-- [Back to Knowledge Catalog](../../../../Catalog.md)
+- [Back to Index](../../../../Index.md)
 - [Back to Epic](../../Overview.md)
 - [Back to Feature](../Overview.md)
 - [Task: Task Title](./01010101_Task-Title.md)
@@ -48,6 +48,3 @@ As a <role>, I want <capability>, so that <outcome>.
 
 ## Delivery Notes
 - Notes for implementation and testing.
-
-
-

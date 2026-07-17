@@ -61,6 +61,19 @@ Describes the nature of the work independent of domain or layer.
 
 ---
 
+## `kind:` — Knowledge Artifact Class
+
+Identifies the knowledge role of a node or source-level file in the reference graph.
+
+| Tag | Description | When to Use |
+|---|---|---|
+| `kind:reference` | Distilled source-level reference guidance | Source overviews and quick-reference material |
+| `kind:topic` | Concept node in the topic graph | Topic or subtopic overview nodes |
+| `kind:glossary` | Terminology definition artifact | Dictionary, glossary, and term-definition notes |
+| `kind:source` | Canonical source artifact marker | Source-container files and source metadata notes |
+
+---
+
 ## `signal:` — Cross-Cutting Concerns
 
 Surfaces conditions that need attention regardless of status. Agents and reviewers should scan for these.

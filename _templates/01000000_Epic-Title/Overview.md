@@ -1,4 +1,4 @@
-﻿---
+---
 id: "01000000"
 type: epic
 title: "Epic Title"
@@ -10,7 +10,7 @@ owners:
 tags:
   - domain:replace-me
   - layer:replace-me
-  - type:feature
+  - type:replace-me
 progress: 0
 ---
 
@@ -19,7 +19,7 @@ progress: 0
 Status: backlog | Progress: [..........] 0%
 
 ## Navigation
-- [Back to Knowledge Catalog](../../Catalog.md)
+- [Back to Index](../../Index.md)
 - [Directive](./Directive.md)
 - [Feature: Feature Title](./01010000_Feature-Title/Overview.md)
 
@@ -37,6 +37,3 @@ Describe the business/engineering outcome and boundaries.
 
 ## Delivery Notes
 - Notes, assumptions, and constraints.
-
-
-

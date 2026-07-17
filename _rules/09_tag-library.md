@@ -37,6 +37,7 @@ All tags use a `namespace:value` format. The colon separates the category from t
 | `domain:` | Business or product domain | `domain:collaboration`, `domain:documents`, `domain:billing` |
 | `layer:` | Technical layer or system area | `layer:backend`, `layer:frontend`, `layer:data`, `layer:infra` |
 | `type:` | Work classification | `type:feature`, `type:bug`, `type:spike`, `type:migration` |
+| `kind:` | Knowledge artifact class | `kind:reference`, `kind:topic`, `kind:glossary`, `kind:source` |
 | `signal:` | Cross-cutting concerns needing attention | `signal:breaking-change`, `signal:tech-debt`, `signal:needs-spec`, `signal:blocked-external` |
 | `team:` | Owning team or sub-group | `team:backend`, `team:platform`, `team:design` |
 
@@ -56,7 +57,7 @@ Before adding a new tag to a ticket, check the catalog first. If the tag does no
 
 ## Adding a New Tag
 
-1. Open [Tags.md](../Tags.md).
+1. Open [Tags.md](../_meta/Tags.md).
 2. Find the correct namespace section.
 3. Add a row to the table: `tag`, `description`, `when to use`.
 4. Update the `updated` date at the top of `Tags.md`.

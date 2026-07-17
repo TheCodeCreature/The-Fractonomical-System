@@ -1,4 +1,4 @@
-﻿---
+---
 id: "01010000"
 type: feature
 title: "Feature Title"
@@ -12,7 +12,7 @@ owners:
 tags:
   - domain:replace-me
   - layer:replace-me
-  - type:feature
+  - type:replace-me
 progress: 0
 ---
 
@@ -21,7 +21,7 @@ progress: 0
 Status: backlog | Progress: [..........] 0%
 
 ## Navigation
-- [Back to Knowledge Catalog](../../../Catalog.md)
+- [Back to Index](../../../Index.md)
 - [Back to Epic](../Overview.md)
 - [Story: Story Title](./01010100_Story-Title/Overview.md)
 
@@ -45,6 +45,3 @@ Describe capability delivered by this feature.
 
 ## Delivery Notes
 - Notes and implementation considerations.
-
-
-

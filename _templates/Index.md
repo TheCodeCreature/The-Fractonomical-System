@@ -1,7 +1,7 @@
 # Product Index
-> Last updated: 2026-07-16 13:31
+> Last updated: YYYY-MM-DD HH:mm
 > Active Epic: none
-> Guide: [Backlog System README](./README.md)
+> Guide: [Backlog System README](../README.md)
 
 ## Epics
 | ID | Title | Status | Score (A/B) | Updated |

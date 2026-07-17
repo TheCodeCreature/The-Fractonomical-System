@@ -20,6 +20,8 @@ Knowledge content lives under:
 - Canonical authored source content: `../_knowledge/_sources/`
 - Reusable scaffolds only: `../_knowledge/_templates/`
 
+Backlog templates live at the repository root in `../_templates/` and are out of scope for this document.
+
 Backlog tickets and knowledge nodes may link to each other, but they must remain structurally separate.
 
 ## Folder Model
@@ -63,11 +65,21 @@ Rules:
 2. Slugs use `Kebab-Case-Words`.
 3. Topic folders only represent conceptual groupings, not chapter numbering requirements.
 
+## ID Strategy
+
+Use a dual-ID model to separate catalog identity from node topology:
+
+1. `source_id` identifies the source in `Catalog.md` (for example, `FS-0001`).
+2. `id` uses hierarchical hex for source/topic template nodes (for example, `02000000`, `02010000`).
+3. Topic `parent` references the hierarchical hex parent node.
+4. Catalog rows should include `source_id`; node-level files should include hierarchical `id`.
+
 ## Source Frontmatter (Minimal Maintenance)
 Use this frontmatter in source-level `Overview.md`:
 
 ```yaml
 ---
+source_id: "FS-0001"
 id: "02000000"
 type: knowledge-source
 title: "Source Title"
