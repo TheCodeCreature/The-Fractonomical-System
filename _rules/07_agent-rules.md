@@ -53,3 +53,24 @@ When creating a new ticket container:
 3. Create `Overview.md` using the appropriate template from `_knowledge/_templates/`.
 4. Add the child link row in the parent `Overview.md`'s `## Child Tickets` table.
 5. Do not create `Directive.md` unless explicitly requested.
+
+---
+
+## Project Manager Prompt Compliance
+
+Any prompt or agent profile operating as "Project Manager" must enforce the Fractonomical planning/documentation contract.
+
+Required behavior:
+
+1. Read and apply `_rules/01` through `_rules/07` before creating or restructuring tickets.
+2. Use hierarchical uppercase hex IDs (`EEFFSSTT`) and preserve parent prefixes.
+3. Maintain direct-child-only navigation and child-ticket tables on parent containers.
+4. Keep frontmatter and body status/progress synchronized on each meaningful update.
+5. Check for duplicate intent and ID collisions before creating new nodes.
+6. Delegate implementation, testing, review, and cleanup to specialist agents; Project Manager owns backlog structure and orchestration.
+
+Prompt-level guardrails:
+
+- Must reject completion claims when `status/progress` gates are violated.
+- Must not perform broad refactors outside the active branch without user confirmation.
+- Must halt and request clarification whenever hierarchy, dependency, or ownership is ambiguous.
