@@ -1,4 +1,4 @@
-# Consistency Checker
+# Consistency Checker Overview
 
 This checker provides a lightweight guardrail for the Fractonomical guide/wiki.
 
@@ -28,7 +28,7 @@ Optional root path:
 ./_coverage/fractonomical-consistency-check.ps1 -Root .
 ```
 
-After each run, the checker rewrites **[`_coverage/CONSISTENCY_REPORT.md`](./CONSISTENCY_REPORT.md)** with a full timestamped issue table.
+After each run, the checker rewrites **[`_coverage/Report.md`](./Report.md)** with a full timestamped issue table.
 
 ## Run From VS Code Task UI
 

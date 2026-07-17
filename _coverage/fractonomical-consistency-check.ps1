@@ -11,11 +11,10 @@ $excludedFiles = @(
 $legacyCheckExcludedPrefixes = @(
     "_rules/",
     "SYSTEM_GUIDE_",
-    "_coverage/CONSISTENCY_CHECKER.md",
-    "_ops/consistency-checker/"
+    "_coverage/Overview.md"
 )
 
-$reportFile = Join-Path -Path $rootPath -ChildPath "_coverage/CONSISTENCY_REPORT.md"
+$reportFile = Join-Path -Path $rootPath -ChildPath "_coverage/Report.md"
 
 $issues = New-Object System.Collections.Generic.List[object]
 
@@ -279,7 +278,7 @@ if ($issues.Count -gt 0) {
 
 # --- Markdown report ---
 $sb = [System.Text.StringBuilder]::new()
-[void]$sb.AppendLine("# Consistency Check Report")
+[void]$sb.AppendLine("# Consistency Report")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("| Field | Value |")
 [void]$sb.AppendLine("|-------|-------|")
