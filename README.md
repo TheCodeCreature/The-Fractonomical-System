@@ -21,7 +21,7 @@ Reference knowledge is managed separately under [./_knowledge](./_knowledge/READ
 | 07 | [Agent Execution Rules](./_rules/07_agent-rules.md) | How-to | Behavioral contract for AI agents, prompts, hooks, and skills |
 | 08 | [Migration Guide](./_rules/08_migration.md) | How-to | Step-by-step checklist for aligning legacy backlog files |
 | 09 | [Tag Library Rules](./_rules/09_tag-library.md) | Reference | Namespace convention, catalog contract, agent rules for tags |
-| 10 | [Knowledge System Rules](./_rules/11_knowledge-system.md) | Reference | Folder contracts for books/papers/wiki knowledge, topic maps, and study-session graphing without project progress fields |
+| 10 | [Knowledge System Rules](./_rules/10_knowledge-system.md) | Reference | Folder contracts for books/papers/wiki knowledge, topic maps, and study-session graphing without project progress fields |
 
 **Tag Catalog:** [Tags.md](./_meta/Tags.md) — living registry of all defined tags, grouped by namespace.
 
@@ -31,7 +31,7 @@ Primary source documents live under `_knowledge/_sources/`.
 
 | Source | Location | Purpose |
 |---|---|---|
-| Fractonomical System Definition | [./_knowledge/_sources/Fractonomical System/10_fractonomical-system-definition.md](./_knowledge/_sources/Fractonomical%20System/10_fractonomical-system-definition.md) | Conceptual source for system philosophy and decomposition model |
+| Fractonomical System Definition | [./_knowledge/_sources/Fractonomical System/Fractonomical System Definition.md](./_knowledge/_sources/Fractonomical%20System/Fractonomical%20System%20Definition.md) | Conceptual source for system philosophy and decomposition model |
 
 ---
 

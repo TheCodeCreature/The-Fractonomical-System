@@ -40,7 +40,7 @@ backlog/
   _knowledge/
     _sources/
       Fractonomical System/
-        10_fractonomical-system-definition.md
+        Fractonomical System Definition.md
   _templates/
   <epic-hex-id>_<epic-slug>/
     Overview.md

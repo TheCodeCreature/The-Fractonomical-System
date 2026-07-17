@@ -8,7 +8,7 @@ Use this area for curated knowledge sources (books, papers, wiki packs, deep not
 - [Knowledge Catalog](./Catalog.md)
 - [Knowledge Sources](./_sources/)
 - [Knowledge Templates](./_templates/)
-- [Rules: Knowledge System](../_rules/11_knowledge-system.md)
+- [Rules: Knowledge System](../_rules/10_knowledge-system.md)
 - [Backlog Governance Hub](../README.md)
 
 ## Principles

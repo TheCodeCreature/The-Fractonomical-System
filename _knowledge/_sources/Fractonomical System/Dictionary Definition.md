@@ -1,3 +1,9 @@
+# Dictionary Definition
+
+## Navigation
+- [Knowledge Catalog](../../Catalog.md)
+- [Knowledge Hub](../../README.md)
+
 ## Fracton (FRACK-ton)
 
 * Noun
@@ -5,9 +11,10 @@
    2. A bounded structural container that encapsulates local state, metadata, and intent.
 * Word Formation
 1. **fract-** (from Latin *fractus*, "broken," from *frangere*, "to break")
-2. **-on** (a scientific/unit suffix used in words like *electron*, often signaling a discrete entity)
-3. Literal construction: "a broken-out unit" or "a discrete split unit"
+2. **-on** (a Greek-derived noun ending used in scientific coinages like *electron* and *ion*, often signaling a discrete entity)
+3. Literal construction: "a broken-out entity" or "a discrete split unit"
 4. System sense: a smallest bounded piece produced by intentional decomposition.
+5. This is a coined hybrid, not a purely Latin formation.
 * Example: "Each fracton in the backlog must maintain valid YAML frontmatter."
 
 ## Fractonomical (frak-tuh-NOM-ih-kul)
@@ -21,6 +28,7 @@
 3. **-ic / -al** (adjectival endings meaning "relating to" or "characterized by")
 4. Literal construction: "relating to lawful/ordered decomposition"
 5. System sense: decomposition that is governed by repeatable structural laws at every layer.
+6. This is a hybrid Greco-Latin coinage, not a purely Latin-based word.
 * Example: "The repository uses a fractonomical design to ensure both humans and agents can navigate the graph without entropy."
 
 ------------------------------
