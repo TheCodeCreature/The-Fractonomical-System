@@ -4,7 +4,7 @@ This folder is a file-system-native product initiative tracker organized by the 
 
 Start at [Index.md](./Index.md) to navigate active initiatives.
 
-Backlog starter templates live under [./_templates](./_templates/).
+Template scaffolds live under [./_knowledge/_templates](./_knowledge/_templates/).
 
 Reference knowledge is managed separately under [./_knowledge](./_knowledge/README.md), using a graph-first structure for books, papers, wiki packs, and study sessions.
 
@@ -26,6 +26,8 @@ Reference knowledge is managed separately under [./_knowledge](./_knowledge/READ
 | 10 | [Knowledge System Rules](./_rules/10_knowledge-system.md) | Reference | Folder contracts for books/papers/wiki knowledge, topic maps, and study-session graphing without project progress fields |
 
 **Tag Catalog:** [Tags.md](./_meta/Tags.md) — living registry of all defined tags, grouped by namespace.
+
+**Consistency Checker:** [CONSISTENCY_CHECKER.md](./_coverage/CONSISTENCY_CHECKER.md) — lightweight validation script and usage guide.
 
 ## Knowledge Sources
 

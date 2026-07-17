@@ -14,6 +14,7 @@ Scope: Canonical naming, template boundaries, tag namespace alignment, and broke
 7. Clarified template separation and dual-ID policy in `_rules/10_knowledge-system.md`.
 8. Added template-location clarity links in `README.md` and `_knowledge/README.md`.
 9. Marked `SYSTEM_GUIDE_REVIEW.md` as historical snapshot context.
+10. Added a lightweight repository checker script at `_coverage/fractonomical-consistency-check.ps1` with usage guide in `_coverage/CONSISTENCY_CHECKER.md`.
 
 ## Current Canonical Locations
 
@@ -22,10 +23,10 @@ Scope: Canonical naming, template boundaries, tag namespace alignment, and broke
 - Backlog governance rules: `_rules/`
 - Tag catalog: `_meta/Tags.md`
 
-## Follow-up Recommendation
+## Checker Command
 
-Add a simple validation script (or checklist) to catch:
-- Broken markdown links
-- `Details.md` references in new backlog nodes
-- Unknown tag namespaces
-- Missing `updated` on meaningful changes
+Run from repository root:
+
+```powershell
+./_coverage/fractonomical-consistency-check.ps1
+```
