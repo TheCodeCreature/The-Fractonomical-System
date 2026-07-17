@@ -26,7 +26,7 @@ backlog/
   Tracking.md                     ← compatibility shim only
   _rules/                         ← governance topic files (this folder)
   _knowledge/                     ← reference knowledge graph (books, papers, wiki packs)
-  _templates/                     ← starter files for new initiatives
+    _templates/                   ← starter files for both backlog and knowledge systems
   <epic-hex-id>_<epic-slug>/
     Overview.md
     Directive.md                  ← optional: strategic intent and constraints

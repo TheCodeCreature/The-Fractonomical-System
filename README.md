@@ -4,9 +4,9 @@ This folder is a file-system-native product initiative tracker organized by the 
 
 Start at [Index.md](./Index.md) to navigate active initiatives.
 
-Backlog starter templates live under [./_templates](./_templates/).
+All starter templates live under [./_knowledge/_templates](./_knowledge/_templates/).
 
-Reference knowledge is managed separately under [./_knowledge](./_knowledge/README.md), using a graph-first structure for books, papers, wiki packs, and study sessions.
+Reference knowledge is managed under [./_knowledge](./_knowledge/README.md), using a graph-first structure for books, papers, wiki packs, and study sessions. Instantiated backlog tickets remain outside `_knowledge/` as execution artifacts.
 
 ---
 
