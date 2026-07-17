@@ -7,6 +7,11 @@ source_container: "_knowledge/_sources/Fractonomical System"
 
 # Fractonomical System Definition
 
+## Navigation
+- [Knowledge Catalog](../../Catalog.md)
+- [Knowledge Hub](../../README.md)
+- [Source Overview](./Overview.md)
+
 ## Purpose
 Define the Fractonomical System as the canonical operating model for this backlog: a recursive, containment-first documentation architecture where each planning node is a ticket, each ticket is machine-parseable, and each edge is constrained to preserve graph signal.
 
@@ -38,10 +43,11 @@ backlog/
   README.md
   _rules/
   _knowledge/
+    _templates/
     _sources/
       Fractonomical System/
+        Overview.md
         Fractonomical System Definition.md
-  _templates/
   <epic-hex-id>_<epic-slug>/
     Overview.md
     Directive.md                  (optional)

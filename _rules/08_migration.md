@@ -14,7 +14,7 @@ Step-by-step instructions for aligning an existing backlog that predates this go
 
 ### Phase 1 — Index and Root
 
-- [ ] Create `Index.md` at the backlog root using `_templates/Index.md`.
+- [ ] Create `Index.md` at the backlog root using the canonical `Index.md` structure defined by this governance system.
 - [ ] Convert `Tracking.md` into a compatibility shim that redirects to `Index.md`.
 - [ ] Ensure `README.md` is the hub pointing to `_rules/`.
 

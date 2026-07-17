@@ -50,6 +50,6 @@ When creating a new ticket container:
 
 1. Generate the ID using the hierarchical hex format `EEFFSSTT` (for example, `01010000`).
 2. Create the folder with the correct `<HierarchicalHexId>_<Slug>` name.
-3. Create `Overview.md` using the appropriate template from `_templates/`.
+3. Create `Overview.md` using the appropriate template from `_knowledge/_templates/`.
 4. Add the child link row in the parent `Overview.md`'s `## Child Tickets` table.
 5. Do not create `Directive.md` unless explicitly requested.

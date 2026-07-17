@@ -4,7 +4,7 @@
 ## Sources
 | ID | Title | Kind | Updated |
 |---|---|---|---|
-| FS-0001 | [Fractonomical System Definition](./_sources/Fractonomical%20System/Fractonomical%20System%20Definition.md) | system-definition | 2026-07-16 |
+| FS-0001 | [Fractonomical System](./_sources/Fractonomical%20System/Overview.md) | system-definition | 2026-07-16 |
 
 ## Catalog Rules
 1. List top-level source folders only.

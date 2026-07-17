@@ -18,11 +18,59 @@ Knowledge content lives under:
 
 - [../_knowledge/README.md](../_knowledge/README.md)
 - Canonical authored source content: `../_knowledge/_sources/`
-- Reusable scaffolds only: `../_knowledge/_templates/`
+- Reusable scaffolds only (knowledge + backlog): `../_knowledge/_templates/`
 
-Backlog templates live at the repository root in `../_templates/` and are out of scope for this document.
+Backlog and knowledge templates are co-located under `../_knowledge/_templates/`, but instantiated backlog tickets remain outside `_knowledge/`.
 
 Backlog tickets and knowledge nodes may link to each other, but they must remain structurally separate.
+
+## Template Families (Disambiguation)
+
+Two template families intentionally share one template root:
+
+1. Delivery template family (execution planning)
+  - Path: `../_knowledge/_templates/<epic-hex-id>_<epic-slug>/...`
+  - Includes: epic, feature, story, task templates
+  - Uses lifecycle fields such as `status` and `progress`
+  - Instantiation target: backlog root hierarchy (outside `_knowledge/`)
+
+2. Knowledge template family (reference graph)
+  - Path: `../_knowledge/_templates/<source-hex-id>_<source-slug>/...`
+  - Includes: source, topic, subtopic templates
+  - Does not use delivery lifecycle tracking
+  - Instantiation target: `_knowledge/_sources/` and related knowledge nodes
+
+Co-location of templates is for discoverability only. Runtime location still follows each system's structural contract.
+
+## Template vs Source Decision Table
+
+Use this flowchart whenever creating or moving files:
+
+```mermaid
+flowchart TD
+    A([New or moved file]) --> B{Reusable, generic\nscaffolding?}
+    B -- Yes --> C[/"_knowledge/_templates/\n(template artifact)"/]
+    B -- No --> D{Authored, source-specific\nknowledge content?}
+    D -- Yes --> E[/"_knowledge/_sources/<Source-Title>/\n(source artifact)"/]
+    D -- No --> F{Tracks execution state?\nstatus · progress · delivery lifecycle}
+    F -- Yes --> G[/"Backlog hierarchy outside _knowledge/\n(delivery runtime artifact)"/]
+    F -- No --> H[/"_knowledge/_sources/ or knowledge node\n(reference runtime artifact)"/]
+```
+
+Decision priority:
+1. Runtime intent wins over folder convenience.
+2. Co-location under `_knowledge/_templates/` never changes runtime destination.
+3. Delivery lifecycle fields are a hard boundary between reference knowledge and execution tracking.
+
+## Authoring Workflow (Required Split)
+
+1. Select template family in `../_knowledge/_templates/`.
+2. Instantiate into the correct runtime location:
+  - Delivery template -> backlog hierarchy (outside `_knowledge/`).
+  - Knowledge template -> `_knowledge/_sources/` (and related knowledge nodes).
+3. Register or update source entry in `Catalog.md` when creating or restructuring a source.
+4. Verify navigation links point to direct parent/child nodes only.
+5. Do not relocate runtime files back into templates.
 
 ## Folder Model
 
@@ -34,6 +82,14 @@ _knowledge/
     <source-title>/
       source.md (or source-specific files)
   _templates/
+    <epic-hex-id>_<epic-slug>/
+      Overview.md
+      Directive.md
+      <feature-hex-id>_<feature-slug>/
+        Overview.md
+        <story-hex-id>_<story-slug>/
+          Overview.md
+          <task-hex-id>_<task-slug>.md
     <source-hex-id>_<source-slug>/
       Overview.md
       Quick-Reference.md
@@ -156,5 +212,5 @@ This enables a mind-map style growth model while preserving chronology.
 
 1. Backlog tickets may cite knowledge nodes in `Delivery Notes` or `Dependencies` comments.
 2. Knowledge nodes may cite relevant epics/features as implementation examples.
-3. Do not move ticket files into `_knowledge`.
+3. Do not move instantiated ticket files into `_knowledge`.
 4. Do not force ticket lifecycle conventions onto knowledge files.
