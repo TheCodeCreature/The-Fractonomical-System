@@ -19,7 +19,7 @@ progress: 0
 Status: backlog | Progress: [..........] 0%
 
 ## Navigation
-- [Back to Index](../../Index.md)
+- [Back to Index](../../../Index.md)
 - [Directive](./Directive.md)
 - [Feature: Feature Title](./01010000_Feature-Title/Overview.md)
 

@@ -28,6 +28,8 @@ Optional root path:
 ./_coverage/fractonomical-consistency-check.ps1 -Root .
 ```
 
+After each run, the checker rewrites **[`_coverage/CONSISTENCY_REPORT.md`](./CONSISTENCY_REPORT.md)** with a full timestamped issue table.
+
 ## Run From VS Code Task UI
 
 Use task label: `Fractonomical: Run Consistency Check`

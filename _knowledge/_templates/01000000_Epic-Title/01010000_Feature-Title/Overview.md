@@ -21,7 +21,7 @@ progress: 0
 Status: backlog | Progress: [..........] 0%
 
 ## Navigation
-- [Back to Index](../../../Index.md)
+- [Back to Index](../../../../Index.md)
 - [Back to Epic](../Overview.md)
 - [Story: Story Title](./01010100_Story-Title/Overview.md)
 

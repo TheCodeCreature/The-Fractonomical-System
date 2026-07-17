@@ -19,14 +19,16 @@ This checker provides a lightweight guardrail for the Fractonomical guide/wiki.
 From repository root in PowerShell:
 
 ```powershell
-./_ops/consistency-checker/consistency-check.ps1
+./_coverage/fractonomical-consistency-check.ps1
 ```
 
 Optional root path:
 
 ```powershell
-./_ops/consistency-checker/consistency-check.ps1 -Root .
+./_coverage/fractonomical-consistency-check.ps1 -Root .
 ```
+
+After each run, the checker rewrites **`_coverage/CONSISTENCY_REPORT.md`** with a full timestamped issue table.
 
 ## Run From VS Code Task UI
 

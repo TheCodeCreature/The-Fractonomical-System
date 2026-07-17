@@ -23,7 +23,7 @@ progress: 0
 Status: backlog | Progress: [..........] 0%
 
 ## Navigation
-- [Back to Index](../../../../Index.md)
+- [Back to Index](../../../../../Index.md)
 - [Back to Epic](../../Overview.md)
 - [Back to Feature](../Overview.md)
 - [Task: Task Title](./01010101_Task-Title.md)
